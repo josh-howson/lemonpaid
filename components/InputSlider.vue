@@ -20,6 +20,12 @@ const min = 0;
 const max = 10;
 const step = 1;
 const percentage = computed(() => ((props.value - min) / (max - min)) * 100)
+const { vibrate } = useVibration();
+
+const handleInput = (e: Event) => {
+  emit('input', e);
+  vibrate('short');
+}
 </script>
 
 <template>
@@ -41,7 +47,7 @@ const percentage = computed(() => ((props.value - min) / (max - min)) * 100)
       :min="min"
       :max="max"
       :step="step"
-      @input="value => emit('input', value)"
+      @input="handleInput"
       class="slider"
       :style="{'--percentage': `${percentage}%`}"
     />
