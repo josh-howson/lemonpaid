@@ -59,7 +59,7 @@ const handleNotificationCountInput = (e: Event) => {
     </div>
     
     <template #bottom>
-      <NuxtLink to="/all-set" class="button-primary">Continue</NuxtLink>
+      <NuxtLink to="/onboard/all-set" class="button-primary">Continue</NuxtLink>
     </template>
   </OnboardStep>
 </template>
