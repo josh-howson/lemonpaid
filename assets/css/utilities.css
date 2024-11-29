@@ -32,7 +32,7 @@
 .button-primary {
   background-color: var(--on-surface);
   color: var(--surface);
-  &:hover {
+  &:active {
     background-color: color-mix(in srgb, var(--on-surface), black 50%);
   }
 }
