@@ -1,7 +1,8 @@
-export type VibrationDuration = 'short' | 'medium' | 'long';
+export type VibrationDuration = 'impulse' | 'short' | 'medium' | 'long';
 
 export default function useVibration() {
   const durations: Record<VibrationDuration, number> = {
+    impulse: 10,
     short: 100,
     medium: 300,
     long: 600,

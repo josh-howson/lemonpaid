@@ -9,7 +9,7 @@ type Props = {
   min: number;
   max: number;
   step?: number;
-  value: number
+  value: number;
 };
 
 const props = withDefaults(defineProps<Props>(), {
@@ -19,12 +19,12 @@ const props = withDefaults(defineProps<Props>(), {
 const min = 0;
 const max = 10;
 const step = 1;
-const percentage = computed(() => ((props.value - min) / (max - min)) * 100)
+const percentage = computed(() => ((props.value - min) / (max - min)) * 100);
 const { vibrate } = useVibration();
 
 const handleInput = (e: Event) => {
   emit('input', e);
-  vibrate('short');
+  vibrate('impulse');
 }
 </script>
 
