@@ -1,6 +1,7 @@
 {
   "short_name": "lemonpaid",
   "name": "lemonpaid",
+  "theme_color": "#F5F6F2",
   "icons": [
     {
       "src": "/favicon-192x192.png",
