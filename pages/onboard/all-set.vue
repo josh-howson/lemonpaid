@@ -6,7 +6,6 @@ const pwaInstall = ref<HTMLElement | null>(null);
 const handleInstall = () => {
   if (pwaInstall.value) {
     (pwaInstall.value as any).showDialog();
-    console.log('trying', pwaInstall.value);
   }
 };
 </script>
