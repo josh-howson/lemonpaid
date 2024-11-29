@@ -33,3 +33,7 @@
   a) {
   cursor: pointer;
 }
+
+:where(a) {
+  -webkit-touch-callout: none;
+}
