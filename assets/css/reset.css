@@ -18,6 +18,7 @@
   touch-action: manipulation;
   -webkit-touch-callout: none;
   touch-action: manipulation;
+  -webkit-user-drag: none;
 }
 
 :where(body) {
