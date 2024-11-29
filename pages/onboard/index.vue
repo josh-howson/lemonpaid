@@ -1,3 +1,21 @@
+<script setup lang="ts">
+useHead({
+  link: [
+    {
+      rel: 'preload',
+      href: '/images/onboard/onboard-1-1.png',
+      as: 'image',
+    },
+    {
+      rel: 'preload',
+      href: '/images/onboard/onboard-1-2.png',
+      as: 'image',
+    },
+  ],
+});
+useLoadImage('/images/onboard/onboard-2.png');
+</script>
+
 <template>
   <OnboardStepImage>
     <template #hero>

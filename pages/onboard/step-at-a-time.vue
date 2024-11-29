@@ -9,7 +9,13 @@
 
       <p>Tell us a little bit about yourself and your salary, and then choose how you’d like to receive reminders.</p>
 
-      <NuxtLink to="/onboard/name" class="button-primary">Continue</NuxtLink>
+      <NuxtLink
+        to="/onboard/name"
+        class="button-primary"
+        prefetch
+      >
+        Continue
+      </NuxtLink>
     </template>
   </OnboardStepImage>
 </template>
