@@ -14,4 +14,12 @@ export default defineNuxtConfig({
       isCustomElement: (tag) => tag === 'pwa-install',
     },
   },
+  css: [
+    '@/assets/css/reset.css',
+    '@/assets/css/font.css',
+    '@/assets/css/variables.css',
+    '@/assets/css/globals.css',
+    '@/assets/css/utilities.css',
+    '@/assets/css/animation.css',
+  ]
 });

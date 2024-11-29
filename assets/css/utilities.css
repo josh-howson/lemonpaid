@@ -1,0 +1,21 @@
+.flex {display: flex}
+.column {flex-direction: column}
+.gap-2 {gap: 3.2rem}
+
+/* Buttons */
+.button-primary {
+  background-color: var(--on-surface);
+  color: var(--surface);
+  border: none;
+  border-radius: 999rem;
+  padding: 1.6rem;
+  &:hover {
+    background-color: color-mix(in srgb, var(--on-surface), black 50%);
+  }
+}
+
+/* Typography */
+.headline-1 {
+  font-size: 3.2rem;
+  line-height: 1.25;
+}

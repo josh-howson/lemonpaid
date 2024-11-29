@@ -1,0 +1,28 @@
+@property --slide-initial {
+  syntax: '<transform-function>';
+  inherits: false;
+  initial-value: translateX(0);
+}
+
+.slide-in-from-left,
+.slide-in-from-right {
+  transform: var(--slide-initial);
+  animation: slideInFromLeft var(--duration, 1s) var(--delay, 0s) var(--easing, ease-in-out) forwards;
+}
+.slide-in-from-left {
+  --slide-initial: translateX(-100%);
+}
+
+.slide-in-from-right {
+  --slide-initial: translateX(100%);
+}
+
+@keyframes slideInFromLeft {
+  from {transform: var(--slide-initial);}
+  to {transform: translateX(0);}
+}
+
+@keyframes slideInFromRight {
+  from {transform: translateX(100%);}
+  to {transform: translateX(0);}
+}

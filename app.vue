@@ -3,10 +3,7 @@ import '@khmyznikov/pwa-install';
 </script>
 
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <h1>Lemonpaid</h1>
+  <NuxtRouteAnnouncer />
 
-    <pwa-install></pwa-install>
-  </div>
+  <NuxtPage />
 </template>

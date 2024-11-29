@@ -1,0 +1,37 @@
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
+
+#__nuxt {
+  height: 100%;
+}
+
+:where(p) {
+  letter-spacing: 0.03125em;
+}
+
+:where(button) {
+  line-height: 1.25;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(var(--page-gutter), 1fr)
+    minmax(0, var(--page-max-content))
+    minmax(var(--page-gutter), 1fr);
+  align-content: start;
+  & > * {
+    grid-column: 2;
+  }
+  & > .fluid {
+    grid-column: 1 / -1;
+  }
+}
