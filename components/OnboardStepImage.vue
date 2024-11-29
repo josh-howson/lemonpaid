@@ -18,6 +18,7 @@ main {
   flex: 1 1 0;
   height: 0;
   max-height: 55svh;
+  margin-top: calc(env(safe-area-inset-top, 0) * -1);
 }
 .message {
   flex: 0 0 auto;
