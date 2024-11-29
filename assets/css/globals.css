@@ -24,9 +24,9 @@ body {
 .page-layout {
   display: grid;
   grid-template-columns:
-    minmax(var(--page-gutter), 1fr)
+    minmax(var(--gutter-x), 1fr)
     minmax(0, var(--page-max-content))
-    minmax(var(--page-gutter), 1fr);
+    minmax(var(--gutter-x), 1fr);
   align-content: start;
   & > * {
     grid-column: 2;

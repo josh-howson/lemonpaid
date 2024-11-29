@@ -27,6 +27,8 @@
   font-weight: 400;
 }
 
-:where(select, button) {
+:where(select,
+  button,
+  a) {
   cursor: pointer;
 }

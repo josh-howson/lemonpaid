@@ -2,6 +2,7 @@
   --surface: #F5F6F2;
   --on-surface: #112945;
 
-  --page-gutter: 2rem;
+  --gutter-x: 2rem;
+  --gutter-y: 3.2rem;
   --page-max-content: 48rem;
 }
