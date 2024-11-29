@@ -24,7 +24,7 @@ const { vibrate } = useVibration();
 
 const handleInput = (e: Event) => {
   emit('input', e);
-  vibrate('impulse');
+  vibrate('shortest');
 }
 </script>
 
