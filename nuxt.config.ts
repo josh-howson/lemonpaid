@@ -6,9 +6,12 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'manifest', href: '/manifest.json' },
-        { rel: 'icon', type: 'image/png', href: '/favicon-192x192.png'}
+        { rel: 'icon', type: 'image/png', href: '/favicon-192x192.png'},
       ],
       title: "Lemonpaid",
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' },
+      ],
     },
   },
   vue: {

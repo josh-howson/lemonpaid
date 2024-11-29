@@ -13,6 +13,13 @@
   overscroll-behavior: none;
 }
 
+:where(html, body) {
+  user-select: none;
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+}
+
 :where(body) {
   margin: 0;
   font-size: 1.6rem;
@@ -32,8 +39,4 @@
   button,
   a) {
   cursor: pointer;
-}
-
-:where(a) {
-  -webkit-touch-callout: none;
 }
