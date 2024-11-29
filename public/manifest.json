@@ -14,5 +14,21 @@
     }
   ],
   "start_url": "/onboard",
-  "display": "standalone"
+  "display": "standalone",
+  "screenshots": [
+    {
+      "src": "screenshots/mobile-1.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Bring back the joy of earning."
+    },
+    {
+      "src": "screenshots/mobile-2.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Get ready to change your attitude and outlook about being a working professional!"
+    }
+  ]
 }
